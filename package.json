@@ -1,10 +1,13 @@
 {
+  "homepage": "https://syhrimr.github.io/3dweb",
   "name": "web3d",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "vite": "^2.3.4"
