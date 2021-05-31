@@ -1,0 +1,10 @@
+{
+    "gallery": [
+        {
+            "id": "1",
+            "src": "./img/dogecoin.jpg",
+            "alt": "3D Doge in The Space Website",
+            "link": "./templates/doge.html"
+        }
+    ]
+}
