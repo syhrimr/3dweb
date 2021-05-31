@@ -2,9 +2,9 @@
     "gallery": [
         {
             "id": "1",
-            "src": "./img/dogecoin.jpg",
+            "src": "./src/img/textures/dogecoin.jpg",
             "alt": "3D Doge in The Space Website",
-            "link": "./templates/doge.html"
+            "link": "./src/templates/doge.html"
         }
     ]
 }

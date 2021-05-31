@@ -36,11 +36,11 @@ scene.add( pointLight, ambientLight )
 const controls = new OrbitControls( camera, renderer.domElement )
 
 // load image as background
-const spaceTexture = new THREE.TextureLoader().load('../img/space.jpg')
+const spaceTexture = new THREE.TextureLoader().load('../img/textures/space.jpg')
 scene.background = spaceTexture
 
 // load image as object texture
-const dogeTexture = new THREE.TextureLoader().load('../img/dogecoin.jpg')
+const dogeTexture = new THREE.TextureLoader().load('../img/textures/dogecoin.jpg')
 const dogeCube = new THREE.Mesh(
   new THREE.BoxGeometry( 3, 3, 3 ),
   new THREE.MeshBasicMaterial( { map: dogeTexture } )
@@ -48,8 +48,8 @@ const dogeCube = new THREE.Mesh(
 scene.add(dogeCube)
 
 // create a moon
-const moonTexture = new THREE.TextureLoader().load('../img/moon.jpg')
-const normalTexture = new THREE.TextureLoader().load('../img/normal.jpg')
+const moonTexture = new THREE.TextureLoader().load('../img/textures/moon.jpg')
+const normalTexture = new THREE.TextureLoader().load('../img/textures/normal.jpg')
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry( 3, 32, 32 ),
   new THREE.MeshStandardMaterial({ 
