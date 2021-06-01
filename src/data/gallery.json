@@ -11,6 +11,12 @@
             "src": "./src/img/cover2.png",
             "alt": "Feel The Sphere",
             "link": "./src/templates/sphere.html"
+        },
+        {
+            "id": "3",
+            "src": "./src/img/cover3.png",
+            "alt": "Animated Terrain",
+            "link": "./src/templates/terrain.html"
         }
     ]
 }
