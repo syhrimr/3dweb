@@ -19,14 +19,14 @@ body {
 }
 
 .container {
-  width: 60%;
+  width: 80%;
   margin: 2rem auto; 
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(16, 10vw);
   grid-gap: 1.5rem; 
 }
 
@@ -46,4 +46,4 @@ body {
     /** Alternative Syntax **/
     /* grid-column: 1 / span 2;  */
     /* grid-row: 1 / span 2; */
-  }
+}
