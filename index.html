@@ -11,33 +11,39 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script type="module" crossorigin src="/assets/index.9161da1e.js"></script>
-  <link rel="stylesheet" href="/assets/index.cecbdbc5.css">
+  <link rel="stylesheet" href="/assets/index.a32966fc.css">
 </head>
   <body>
     <main class="container">
       <div class="gallery">
-        <figure class="gallery__item gallery__item--1">
-          <a id="galleryLink" >
-            <img id="galleryImg" class="gallery__img">
-          </a>
-        </figure>
-    </div>
+        <!-- Placeholder figure galleries -->
+      </div>
     </main>
+
+    <figure id="galleryItem" class="gallery__item">
+      <a id="galleryLink" >
+        <img id="galleryImg" class="gallery__img">
+      </a>
+    </figure>
 
     <script>
       $(document).ready(function() {
         $.ajax({
           type: 'GET',
-          url: '/data/gallery.json',
+          url: '/src/data/gallery.json',
           success: function(data, status, xhr) {
             let gallery = data.gallery
             console.log(gallery)
 
             gallery.forEach(element => {
               console.log(element.link)
-              $('#galleryLink').attr('href', element.link)
-              $('#galleryImg').attr('src', element.src)
-              $('#galleryImg').attr('alt', element.alt)
+              let galleryItem = $('#galleryItem').clone()
+              $(galleryItem).removeAttr('id')
+              $(galleryItem).find('#galleryLink').attr('href', element.link)
+              $(galleryItem).find('#galleryImg').attr('src', element.src)
+              $(galleryItem).find('#galleryImg').attr('alt', element.alt)
+              $('.gallery').append(galleryItem)
+              $(galleryItem).show()
             })
           },
           error: function(xhr, status, error) {
