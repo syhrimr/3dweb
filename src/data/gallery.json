@@ -17,6 +17,12 @@
             "src": "./src/img/cover3.png",
             "alt": "Animated Terrain",
             "link": "./src/templates/terrain.html"
+        },
+        {
+            "id": "4",
+            "src": "./src/img/cover4.png",
+            "alt": "Rain Fall",
+            "link": "./src/templates/rain.html"
         }
     ]
 }

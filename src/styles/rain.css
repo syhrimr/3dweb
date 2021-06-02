@@ -3,9 +3,22 @@
     padding: 0;
 }
 
+html,
 body {
     width: 100vw;
     height: 100vh;
     background: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+body {
     overflow: hidden;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
 }
